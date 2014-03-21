@@ -14,7 +14,7 @@ namespace Surf.app
     {
 
         // initialize our setting strings, to be defined later in code.
-        public static String home_page;
+        public static String homepage;
         public static String search_provider;
         public static String search_provider_url;
         public static String on_startup;
@@ -54,7 +54,7 @@ namespace Surf.app
                              
                             if (reader.Name == "homepage")
                             {
-                                home_page = reader.ReadInnerXml();
+                                homepage = reader.ReadInnerXml();
                             }
 
                             if (reader.Name == "search_provider")
@@ -159,35 +159,61 @@ namespace Surf.app
                         writer.WriteStartElement("personal");
 
 		                    writer.WriteElementString("homepage", "http://duckduckgo.com");
-		                    writer.WriteElementString("search_provider", "DuckDuckGo");
-		                    writer.WriteElementString("search_provider_url", "http://duckduckgo.com/?q=");
+                            homepage = "http://duckduckgo.com";
+
+                            writer.WriteElementString("search_provider", "DuckDuckGo");
+                            search_provider = "DuckDuckGo";
+
+                            writer.WriteElementString("search_provider_url", "http://duckduckgo.com/?q=");
+                            search_provider_url = "http://duckduckgo.com/?q=";
 
                         writer.WriteEndElement(); //personal
 
                         writer.WriteStartElement("browser");
 
                             writer.WriteElementString("on_startup", "homepage");
+                            on_startup = "homepage";
+
                             writer.WriteElementString("show_bookmarks_bar", "false");
+                            show_bookmarks_bar = false;
+
                             writer.WriteElementString("show_home_button", "true");
+                            show_home_button = true;
+
                             writer.WriteElementString("clear_data_on_close", "false");
+                            clear_data_on_close = false;
 
                         writer.WriteEndElement(); //browser
 
                         writer.WriteStartElement("window_placement");
 
-                        writer.WriteElementString("window_top", " ");
-                        writer.WriteElementString("window_bottom", " ");
-                        writer.WriteElementString("window_left", " ");
-                        writer.WriteElementString("window_right", " ");
-                        writer.WriteElementString("window_width", " ");
-                        writer.WriteElementString("window_height", " ");
+                        writer.WriteElementString("window_top", Convert.ToString((Screen.PrimaryScreen.WorkingArea.Height - 900) / 2));
+                        window_top = ((Screen.PrimaryScreen.WorkingArea.Height - 900) / 2);
+
+                        writer.WriteElementString("window_bottom", "0");
+                        window_bottom = 0;
+
+                        writer.WriteElementString("window_left", Convert.ToString((Screen.PrimaryScreen.WorkingArea.Height - 700) / 2));
+                        window_left = ((Screen.PrimaryScreen.WorkingArea.Height - 700) / 2);
+
+                        writer.WriteElementString("window_right", "0");
+                        window_right = 0;
+
+                        writer.WriteElementString("window_width", "900");
+                        window_width = 900;
+
+                        writer.WriteElementString("window_height", "700");
+                        window_height = 700;
+
                         writer.WriteElementString("window_maximized", "false");
+                        window_maximized = false;
 
                         writer.WriteEndElement(); //window_placement
 
                     writer.WriteEndElement(); //Preferences
 
 	                writer.WriteEndDocument(); //end of xml file
+                    
 
                 }
 

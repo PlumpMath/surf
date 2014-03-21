@@ -73,7 +73,7 @@ namespace Surf
             browserwindow.SelectedTabIndex = 0;
 
             // temporary size
-            browserwindow.Size = new System.Drawing.Size(1060, 700);
+            browserwindow.Size = new System.Drawing.Size(900, 700);
 
             browserwindow.Size = new System.Drawing.Size(app.user_settings.window_width, app.user_settings.window_height);
             browserwindow.Location = new System.Drawing.Point(user_settings.window_left, user_settings.window_top);
