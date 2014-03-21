@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using Surf;
 using Surf.TabRenderer;
+using Surf.app;
 using CefSharp.WinForm;
 using CefSharp;
 
@@ -71,8 +72,21 @@ namespace Surf
                 });
             browserwindow.SelectedTabIndex = 0;
 
-            // TODO: use the size that was last set by the user.
+            // temporary size
             browserwindow.Size = new System.Drawing.Size(1060, 700);
+
+            browserwindow.Size = new System.Drawing.Size(app.user_settings.window_width, app.user_settings.window_height);
+            browserwindow.Location = new System.Drawing.Point(user_settings.window_left, user_settings.window_top);
+
+
+            if (app.user_settings.window_maximized == true)
+            {
+                browserwindow.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                browserwindow.WindowState = FormWindowState.Normal;
+            }
 
             // prepare the TabRenderer
             TitleBarTabsApplicationContext applicationContext = new TitleBarTabsApplicationContext();

@@ -14,18 +14,20 @@ namespace Surf.app
     {
 
         // initialize our setting strings, to be defined later in code.
-        public static String homePage;
-        public static String searchProvider;
-        public static String searchProviderQueryURL;
-        public static String onStartup;
-        public static Boolean showBookmarksBar;
-        public static Boolean showHomeButton;
-        public static Boolean clearDataOnClose;
-        public static Int32 windowBottom;
-        public static Int32 windowLeft;
-        public static Int32 windowWidth;
-        public static Int32 windowHeight;
-        public static Boolean windowMaximized;
+        public static String home_page;
+        public static String search_provider;
+        public static String search_provider_url;
+        public static String on_startup;
+        public static Boolean show_bookmarks_bar;
+        public static Boolean show_home_button;
+        public static Boolean clear_data_on_close;
+        public static Int32 window_top;
+        public static Int32 window_bottom;
+        public static Int32 window_left;
+        public static Int32 window_right;
+        public static Int32 window_width;
+        public static Int32 window_height;
+        public static Boolean window_maximized;
 
         public static void loadUserSettings()
         {
@@ -52,62 +54,72 @@ namespace Surf.app
                              
                             if (reader.Name == "homepage")
                             {
-                                homePage = reader.ReadInnerXml();
+                                home_page = reader.ReadInnerXml();
                             }
 
                             if (reader.Name == "search_provider")
                             {
-                                searchProvider = reader.ReadInnerXml();
+                                search_provider = reader.ReadInnerXml();
                             }
 
                             if (reader.Name == "search_provider_url")
                             {
-                                searchProviderQueryURL = reader.ReadInnerXml();
+                                search_provider_url = reader.ReadInnerXml();
                             }
 
                             if (reader.Name == "on_startup")
                             {
-                                onStartup = reader.ReadInnerXml();
+                                on_startup = reader.ReadInnerXml();
                             }
 
                             if (reader.Name == "show_bookmarks_bar")
                             {
-                                showBookmarksBar = Convert.ToBoolean(reader.ReadInnerXml());
+                                show_bookmarks_bar = Convert.ToBoolean(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "show_home_button")
                             {
-                                showHomeButton = Convert.ToBoolean(reader.ReadInnerXml());
+                                show_home_button = Convert.ToBoolean(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "clear_data_on_close")
                             {
-                                clearDataOnClose = Convert.ToBoolean(reader.ReadInnerXml());
+                                clear_data_on_close = Convert.ToBoolean(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_top")
+                            {
+                                window_top = Convert.ToInt32(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "window_bottom")
                             {
-                                windowBottom = Convert.ToInt32(reader.ReadInnerXml());
+                                window_bottom = Convert.ToInt32(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "window_left")
                             {
-                                windowLeft = Convert.ToInt32(reader.ReadInnerXml());
+                                window_left = Convert.ToInt32(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_right")
+                            {
+                                window_bottom = Convert.ToInt32(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "window_width")
                             {
-                                windowWidth = Convert.ToInt32(reader.ReadInnerXml());
+                                window_width = Convert.ToInt32(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "window_height")
                             {
-                                windowHeight = Convert.ToInt32(reader.ReadInnerXml());
+                                window_height = Convert.ToInt32(reader.ReadInnerXml());
                             }
 
                             if (reader.Name == "window_maximized")
                             {
-                                windowMaximized = Convert.ToBoolean(reader.ReadInnerXml());
+                                window_maximized = Convert.ToBoolean(reader.ReadInnerXml());
                             }
 
 
@@ -127,6 +139,9 @@ namespace Surf.app
                             break;
                     }
                 }
+
+                // frees up the file.
+                reader.Close();
 
             }
 
@@ -160,8 +175,10 @@ namespace Surf.app
 
                         writer.WriteStartElement("window_placement");
 
+                        writer.WriteElementString("window_top", " ");
                         writer.WriteElementString("window_bottom", " ");
                         writer.WriteElementString("window_left", " ");
+                        writer.WriteElementString("window_right", " ");
                         writer.WriteElementString("window_width", " ");
                         writer.WriteElementString("window_height", " ");
                         writer.WriteElementString("window_maximized", "false");
@@ -189,14 +206,14 @@ namespace Surf.app
             }
         }
 
-        public static void saveSetting(String settingName, String newvalue)
+        public static void saveSetting(String settingName, Object newValue)
         {
 
             var xmlDocument = XDocument.Load(userSettingsFile);
 
             var element = xmlDocument.Descendants(settingName).FirstOrDefault();
 
-            if (element != null) element.Value = newvalue;
+            if (element != null) element.Value = Convert.ToString(newValue);
 
             xmlDocument.Save(userSettingsFile);
 

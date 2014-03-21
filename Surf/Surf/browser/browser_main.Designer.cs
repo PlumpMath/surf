@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Text = "browser_main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(browser_main_FormClosing);
         }
 
         #endregion
