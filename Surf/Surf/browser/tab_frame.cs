@@ -8,7 +8,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.ComponentModel;
 using System.Windows.Forms;
-using CefSharp.WinForms;
+using CefSharp.WinForm;
 using CefSharp;
 using System.Security.Permissions;
 
@@ -27,16 +27,17 @@ namespace Surf.browser
 
             // prepare the BrowserSettings
             var BSettings = new BrowserSettings();
-            BSettings.WebSecurityDisabled = true;
-            BSettings.PluginsDisabled = false;
-            BSettings.FileAccessFromFileUrlsAllowed = true;
-            BSettings.JavaScriptDisabled = false;
-            BSettings.XssAuditorEnabled = false;
-            BSettings.AcceleratedPluginsDisabled = false;
-            BSettings.DeveloperToolsDisabled = false;
+            //BSettings.WebSecurityDisabled = true;
+            //BSettings.PluginsDisabled = false;
+            //BSettings.FileAccessFromFileUrlsAllowed = true;
+            //BSettings.JavaScriptDisabled = false;
+            //BSettings.XssAuditorEnabled = false;
+            //BSettings.AcceleratedPluginsDisabled = false;
+            //BSettings.DeveloperToolsDisabled = false;
+            //BSettings.RemoteFontsDisabled = false;
 
             // initialize the webview
-            webView = new WebView("http://www.google.com", BSettings);
+            webView = new WebView("http://www.google.com", new BrowserSettings());
 
             // prepare and add the webview to the window.
             webView.Dock = DockStyle.Fill;
@@ -50,7 +51,11 @@ namespace Surf.browser
         // Get all properties from https://github.com/chillitom/CefSharp/blob/master/CefSharp/BrowserCore.h
         void webView_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            BrowserCore core = (BrowserCore)sender;
+            // TODO: since CefSharp3 upgrade, doesn't seem to be working,
+            // except for the Address property. There are some other
+            // new EventArgs, look into those.
+
+            //BrowserCore core = (BrowserCore)sender;
             switch (e.PropertyName)
             {
                 case "IsBrowserInitialized":
@@ -84,9 +89,6 @@ namespace Surf.browser
                     else
                     {
                         // we are not loading. Show the favicon.
-
-                        // TODO: call to get the page's FavIcon, set as the tab icon,
-                        // then convert to PNG for the OneBox icon.
                         OneBoxFavIcon.Image = Properties.Resources.favicondefault;
                         OneBoxFavIcon.Image = favIconImage(webView.Address.ToString());
 

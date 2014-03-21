@@ -20,9 +20,11 @@ namespace Surf.app
         public static String onStartup;
         public static Boolean showBookmarksBar;
         public static Boolean showHomeButton;
-        public static String clearDataOnClose;
+        public static Boolean clearDataOnClose;
         public static Int32 windowBottom;
         public static Int32 windowLeft;
+        public static Int32 windowWidth;
+        public static Int32 windowHeight;
         public static Boolean windowMaximized;
 
         public static void loadUserSettings()
@@ -55,7 +57,57 @@ namespace Surf.app
 
                             if (reader.Name == "search_provider")
                             {
-                                homePage = reader.ReadInnerXml();
+                                searchProvider = reader.ReadInnerXml();
+                            }
+
+                            if (reader.Name == "search_provider_url")
+                            {
+                                searchProviderQueryURL = reader.ReadInnerXml();
+                            }
+
+                            if (reader.Name == "on_startup")
+                            {
+                                onStartup = reader.ReadInnerXml();
+                            }
+
+                            if (reader.Name == "show_bookmarks_bar")
+                            {
+                                showBookmarksBar = Convert.ToBoolean(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "show_home_button")
+                            {
+                                showHomeButton = Convert.ToBoolean(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "clear_data_on_close")
+                            {
+                                clearDataOnClose = Convert.ToBoolean(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_bottom")
+                            {
+                                windowBottom = Convert.ToInt32(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_left")
+                            {
+                                windowLeft = Convert.ToInt32(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_width")
+                            {
+                                windowWidth = Convert.ToInt32(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_height")
+                            {
+                                windowHeight = Convert.ToInt32(reader.ReadInnerXml());
+                            }
+
+                            if (reader.Name == "window_maximized")
+                            {
+                                windowMaximized = Convert.ToBoolean(reader.ReadInnerXml());
                             }
 
 
@@ -108,9 +160,11 @@ namespace Surf.app
 
                         writer.WriteStartElement("window_placement");
 
-                        writer.WriteElementString("bottom", " ");
-                        writer.WriteElementString("left", " ");
-                        writer.WriteElementString("maximized", "false");
+                        writer.WriteElementString("window_bottom", " ");
+                        writer.WriteElementString("window_left", " ");
+                        writer.WriteElementString("window_width", " ");
+                        writer.WriteElementString("window_height", " ");
+                        writer.WriteElementString("window_maximized", "false");
 
                         writer.WriteEndElement(); //window_placement
 

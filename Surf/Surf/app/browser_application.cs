@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using Surf;
 using Surf.TabRenderer;
-using CefSharp.WinForms;
+using CefSharp.WinForm;
 using CefSharp;
 
 namespace Surf
@@ -28,6 +28,9 @@ namespace Surf
             // perform the directory check
             Surf.app.app_directory_checker.directoryCheck();
 
+            // load the user settings
+            app.user_settings.loadUserSettings();
+
             // enable Windows visual styles
             Application.EnableVisualStyles();
 
@@ -38,17 +41,21 @@ namespace Surf
             Application.SetCompatibleTextRenderingDefault(false);
 
             // prepare the new CefSharp settings
-            var CefSettings = new CefSharp.Settings();
-            CefSettings.UserAgent = app.product.userAgent;
-            CefSettings.CachePath = app.product.dirCache;
 
-            // set up the paths to each plugin we use.
-            //////////////////////////////////////////
-            // path to Flash Player DLL plugin
-            CefSettings.AddPluginPath(Path.Combine(app.product.dirSurfApp, "NPSWF32.dll"));
+            var settings = new CefSettings
+            {
+                UserAgent = app.product.userAgent,
+                CachePath = app.product.dirCache,
+                BrowserSubprocessPath = "surf.exe",
+            };
+
+            // Not really sure if we need this, it seems
+            // that CefSettings.CachePath also sets for
+            // the cookies path.
+            Cef.SetCookiePath(app.product.dirCache, true);
 
             // initialize CEF
-            CEF.Initialize(CefSettings);
+            Cef.Initialize(settings);
 
             // prepare the new browser window
             Surf.browser.browser_main browserwindow = new Surf.browser.browser_main();
@@ -73,7 +80,6 @@ namespace Surf
 
             // start the browser!
             Application.Run(applicationContext);
-
 
         } //void Main
 
