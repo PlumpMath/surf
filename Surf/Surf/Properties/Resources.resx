@@ -118,94 +118,127 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="backActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="faviconprintpreviewico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconprintpreviewico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateNotificationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateNotificationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bookmarksActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bookmarksActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="border" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\border.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="buttonHoverBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonHoverBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="defaultIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\defaultIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="faviconbookmarksico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\faviconbookmarksico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="faviconcrashedico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\faviconcrashedico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicondefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicondefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicondefaultico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicondefaultico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicondownloadsico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicondownloadsico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="faviconhistoryico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\faviconhistoryico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="faviconprintpreviewico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\faviconprintpreviewico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="spinnerLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spinnerLoading.GIF;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="faviconsettingsico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\faviconsettingsico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forwardActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forwardActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spinnerConnecting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spinnerConnecting.GIF;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spinnerLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spinnerLoading.GIF;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tabAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabAddHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabAddHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabCenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabCenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabCloseHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabCloseHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabInactiveCenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabInactiveCenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabInactiveLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabInactiveLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabInactiveRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabInactiveRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toolbarBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\toolbarBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tabLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabAddHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabAddHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicondownloadsico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicondownloadsico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicondefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicondefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="border" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\border.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forwardActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forwardActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabInactiveCenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabInactiveCenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spinnerConnecting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spinnerConnecting.GIF;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconbookmarksico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconbookmarksico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabInactiveRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabInactiveRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolsActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolsActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabInactiveLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabInactiveLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbarBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbarBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabCenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabCenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabCloseHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabCloseHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonHoverBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonHoverBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconcrashedico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconcrashedico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconhistoryico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconhistoryico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateBadge5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateBadge5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicondefaultico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicondefaultico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bookmarksStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookmarksStar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bookmarksStarLit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookmarksStarLit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

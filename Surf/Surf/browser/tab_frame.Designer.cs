@@ -34,20 +34,26 @@
             this.crashlblDetails = new System.Windows.Forms.Label();
             this.crashbtnReload = new System.Windows.Forms.Button();
             this.toolbarBackground = new System.Windows.Forms.Panel();
+            this.btnStar = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.PictureBox();
+            this.upgradeBadge = new System.Windows.Forms.PictureBox();
+            this.btnTools = new System.Windows.Forms.PictureBox();
+            this.OneBoxBackround = new System.Windows.Forms.Panel();
+            this.OneBoxFavIcon = new System.Windows.Forms.PictureBox();
+            this.OneBox = new System.Windows.Forms.TextBox();
             this.btnForward = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.PictureBox();
-            this.OneBox = new System.Windows.Forms.TextBox();
-            this.urlBorder = new System.Windows.Forms.Panel();
-            this.urlBackground = new System.Windows.Forms.Panel();
-            this.OneBoxFavIcon = new System.Windows.Forms.PictureBox();
             this.maincontainer.SuspendLayout();
             this.pnlTabCrash.SuspendLayout();
             this.toolbarBackground.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeBadge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTools)).BeginInit();
+            this.OneBoxBackround.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OneBoxFavIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
-            this.urlBorder.SuspendLayout();
-            this.urlBackground.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OneBoxFavIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // maincontainer
@@ -56,7 +62,7 @@
             this.maincontainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.maincontainer.Location = new System.Drawing.Point(0, 36);
             this.maincontainer.Name = "maincontainer";
-            this.maincontainer.Size = new System.Drawing.Size(331, 265);
+            this.maincontainer.Size = new System.Drawing.Size(800, 564);
             this.maincontainer.TabIndex = 1;
             // 
             // pnlTabCrash
@@ -95,21 +101,109 @@
             // toolbarBackground
             // 
             this.toolbarBackground.BackgroundImage = global::Surf.Properties.Resources.toolbarBackground;
+            this.toolbarBackground.Controls.Add(this.btnStar);
+            this.toolbarBackground.Controls.Add(this.btnHome);
+            this.toolbarBackground.Controls.Add(this.upgradeBadge);
+            this.toolbarBackground.Controls.Add(this.btnTools);
+            this.toolbarBackground.Controls.Add(this.OneBoxBackround);
             this.toolbarBackground.Controls.Add(this.btnForward);
             this.toolbarBackground.Controls.Add(this.btnBack);
-            this.toolbarBackground.Controls.Add(this.OneBox);
-            this.toolbarBackground.Controls.Add(this.urlBorder);
             this.toolbarBackground.Dock = System.Windows.Forms.DockStyle.Top;
             this.toolbarBackground.Location = new System.Drawing.Point(0, 0);
             this.toolbarBackground.Name = "toolbarBackground";
-            this.toolbarBackground.Size = new System.Drawing.Size(331, 36);
+            this.toolbarBackground.Size = new System.Drawing.Size(800, 36);
             this.toolbarBackground.TabIndex = 4;
+            // 
+            // btnStar
+            // 
+            this.btnStar.BackColor = System.Drawing.Color.Transparent;
+            this.btnStar.Image = global::Surf.Properties.Resources.bookmarksStar;
+            this.btnStar.Location = new System.Drawing.Point(701, 9);
+            this.btnStar.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
+            this.btnStar.Name = "btnStar";
+            this.btnStar.Size = new System.Drawing.Size(19, 19);
+            this.btnStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnStar.TabIndex = 7;
+            this.btnStar.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Image = global::Surf.Properties.Resources.toolsActive;
+            this.btnHome.Location = new System.Drawing.Point(727, 6);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(27, 27);
+            this.btnHome.TabIndex = 6;
+            this.btnHome.TabStop = false;
+            // 
+            // upgradeBadge
+            // 
+            this.upgradeBadge.BackColor = System.Drawing.Color.Transparent;
+            this.upgradeBadge.Image = global::Surf.Properties.Resources.UpdateBadge1;
+            this.upgradeBadge.Location = new System.Drawing.Point(761, 22);
+            this.upgradeBadge.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
+            this.upgradeBadge.Name = "upgradeBadge";
+            this.upgradeBadge.Size = new System.Drawing.Size(10, 10);
+            this.upgradeBadge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.upgradeBadge.TabIndex = 5;
+            this.upgradeBadge.TabStop = false;
+            this.upgradeBadge.Visible = false;
+            // 
+            // btnTools
+            // 
+            this.btnTools.BackColor = System.Drawing.Color.Transparent;
+            this.btnTools.Image = global::Surf.Properties.Resources.toolsActive;
+            this.btnTools.Location = new System.Drawing.Point(761, 6);
+            this.btnTools.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
+            this.btnTools.Name = "btnTools";
+            this.btnTools.Size = new System.Drawing.Size(27, 27);
+            this.btnTools.TabIndex = 4;
+            this.btnTools.TabStop = false;
+            // 
+            // OneBoxBackround
+            // 
+            this.OneBoxBackround.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OneBoxBackround.BackColor = System.Drawing.Color.White;
+            this.OneBoxBackround.Controls.Add(this.OneBoxFavIcon);
+            this.OneBoxBackround.Controls.Add(this.OneBox);
+            this.OneBoxBackround.ForeColor = System.Drawing.Color.Silver;
+            this.OneBoxBackround.Location = new System.Drawing.Point(80, 5);
+            this.OneBoxBackround.Name = "OneBoxBackround";
+            this.OneBoxBackround.Size = new System.Drawing.Size(616, 27);
+            this.OneBoxBackround.TabIndex = 2;
+            // 
+            // OneBoxFavIcon
+            // 
+            this.OneBoxFavIcon.Image = global::Surf.Properties.Resources.favicondefault;
+            this.OneBoxFavIcon.Location = new System.Drawing.Point(3, 5);
+            this.OneBoxFavIcon.Name = "OneBoxFavIcon";
+            this.OneBoxFavIcon.Size = new System.Drawing.Size(16, 16);
+            this.OneBoxFavIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OneBoxFavIcon.TabIndex = 6;
+            this.OneBoxFavIcon.TabStop = false;
+            // 
+            // OneBox
+            // 
+            this.OneBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OneBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OneBox.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.OneBox.Location = new System.Drawing.Point(22, 4);
+            this.OneBox.Margin = new System.Windows.Forms.Padding(9);
+            this.OneBox.Name = "OneBox";
+            this.OneBox.Size = new System.Drawing.Size(585, 20);
+            this.OneBox.TabIndex = 0;
+            this.OneBox.Text = "surf://newtab";
+            this.OneBox.WordWrap = false;
+            this.OneBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OneBox_KeyDown);
             // 
             // btnForward
             // 
             this.btnForward.BackColor = System.Drawing.Color.Transparent;
             this.btnForward.Image = global::Surf.Properties.Resources.forwardActive;
-            this.btnForward.Location = new System.Drawing.Point(37, 5);
+            this.btnForward.Location = new System.Drawing.Point(47, 5);
             this.btnForward.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(27, 27);
@@ -120,68 +214,19 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.Image = global::Surf.Properties.Resources.backActive;
-            this.btnBack.Location = new System.Drawing.Point(6, 5);
+            this.btnBack.Location = new System.Drawing.Point(13, 5);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(27, 27);
             this.btnBack.TabIndex = 2;
             this.btnBack.TabStop = false;
             // 
-            // OneBox
-            // 
-            this.OneBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.OneBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OneBox.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.OneBox.Location = new System.Drawing.Point(97, 8);
-            this.OneBox.Margin = new System.Windows.Forms.Padding(9);
-            this.OneBox.Name = "OneBox";
-            this.OneBox.Size = new System.Drawing.Size(225, 20);
-            this.OneBox.TabIndex = 0;
-            this.OneBox.Text = "surf://newtab";
-            this.OneBox.WordWrap = false;
-            this.OneBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OneBox_KeyDown);
-            // 
-            // urlBorder
-            // 
-            this.urlBorder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.urlBorder.BackColor = System.Drawing.Color.Silver;
-            this.urlBorder.Controls.Add(this.urlBackground);
-            this.urlBorder.ForeColor = System.Drawing.Color.Silver;
-            this.urlBorder.Location = new System.Drawing.Point(69, 5);
-            this.urlBorder.Name = "urlBorder";
-            this.urlBorder.Size = new System.Drawing.Size(258, 26);
-            this.urlBorder.TabIndex = 1;
-            // 
-            // urlBackground
-            // 
-            this.urlBackground.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.urlBackground.BackColor = System.Drawing.Color.White;
-            this.urlBackground.Controls.Add(this.OneBoxFavIcon);
-            this.urlBackground.ForeColor = System.Drawing.Color.Silver;
-            this.urlBackground.Location = new System.Drawing.Point(1, 1);
-            this.urlBackground.Name = "urlBackground";
-            this.urlBackground.Size = new System.Drawing.Size(256, 24);
-            this.urlBackground.TabIndex = 2;
-            // 
-            // OneBoxFavIcon
-            // 
-            this.OneBoxFavIcon.Image = global::Surf.Properties.Resources.favicondefault;
-            this.OneBoxFavIcon.Location = new System.Drawing.Point(5, 4);
-            this.OneBoxFavIcon.Name = "OneBoxFavIcon";
-            this.OneBoxFavIcon.Size = new System.Drawing.Size(16, 16);
-            this.OneBoxFavIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.OneBoxFavIcon.TabIndex = 6;
-            this.OneBoxFavIcon.TabStop = false;
-            // 
             // tab_frame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(331, 301);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.maincontainer);
             this.Controls.Add(this.toolbarBackground);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -191,12 +236,15 @@
             this.maincontainer.ResumeLayout(false);
             this.pnlTabCrash.ResumeLayout(false);
             this.toolbarBackground.ResumeLayout(false);
-            this.toolbarBackground.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeBadge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTools)).EndInit();
+            this.OneBoxBackround.ResumeLayout(false);
+            this.OneBoxBackround.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OneBoxFavIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
-            this.urlBorder.ResumeLayout(false);
-            this.urlBackground.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.OneBoxFavIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -208,12 +256,15 @@
         private System.Windows.Forms.PictureBox btnForward;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.TextBox OneBox;
-        private System.Windows.Forms.Panel urlBorder;
-        private System.Windows.Forms.Panel urlBackground;
+        private System.Windows.Forms.Panel OneBoxBackround;
         private System.Windows.Forms.Panel pnlTabCrash;
         private System.Windows.Forms.Label crashlblDetails;
         private System.Windows.Forms.Button crashbtnReload;
         private System.Windows.Forms.PictureBox OneBoxFavIcon;
+        private System.Windows.Forms.PictureBox btnTools;
+        private System.Windows.Forms.PictureBox upgradeBadge;
+        private System.Windows.Forms.PictureBox btnStar;
+        private System.Windows.Forms.PictureBox btnHome;
 
 
     }

@@ -18,6 +18,7 @@ namespace Surf.browser
     {
         // set up the new WebView control
         WebView webView;
+
         public tab_frame()
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -46,6 +47,29 @@ namespace Surf.browser
 
             // prepare the eventhandlers
             webView.PropertyChanged += new PropertyChangedEventHandler(webView_PropertyChanged);
+            webView.LoadCompleted += new LoadCompletedEventHandler(webview_LoadCompleted);
+
+        }
+
+        private void webview_LoadCompleted(object sender, LoadCompletedEventArgs url)
+        {
+            // we are not loading. Show the favicon.
+            OneBoxFavIcon.Image = Properties.Resources.favicondefault;
+            OneBoxFavIcon.Image = favIconImage(webView.Address.ToString());
+
+            this.Icon = Properties.Resources.favicondefaultico;
+            this.Icon = favIcon(webView.Address.ToString());
+
+            if (webView.IsLoading)
+            {
+                // we are loading. Show the spinner.
+                OneBoxFavIcon.Image = Properties.Resources.spinnerLoading;
+            }
+            else
+            {
+
+            }
+
         }
 
         // Get all properties from https://github.com/chillitom/CefSharp/blob/master/CefSharp/BrowserCore.h

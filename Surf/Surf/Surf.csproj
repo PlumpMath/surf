@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="app\app_directory_checker.cs" />
     <Compile Include="app\product.cs" />
+    <Compile Include="app\upgrade_detector.cs" />
     <Compile Include="app\user_settings.cs" />
     <Compile Include="browser\browser_main.cs">
       <SubType>Form</SubType>
@@ -431,6 +432,39 @@
     <None Include="Resources\favicondefault.png" />
     <None Include="Resources\spinnerLoading.GIF" />
     <None Include="Resources\spinnerConnecting.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateBadge8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateNotificationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmarksStar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmarksStarLit1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,17 +1,27 @@
 ﻿using Surf;
 using Surf.TabRenderer;
+using System;
 using System.Windows.Forms;
 
 namespace Surf.browser
 {
     public partial class browser_main : TitleBarTabs
     {
+        // set up the upgrade timer.
+        Timer tmrUpgrade;
+
         public browser_main()
         {
             InitializeComponent();
 
             AeroPeekEnabled = false;
             TabRenderer = new chrome_tab_renderer(this);
+
+            // create the upgrade timer.
+            tmrUpgrade = new System.Windows.Forms.Timer();
+            tmrUpgrade.Interval = 3000;
+
+            this.tmrUpgrade.Tick += new EventHandler(tmrUpgrade_Tick); 
         }
 
         public override TitleBarTab CreateTab()
@@ -54,6 +64,21 @@ namespace Surf.browser
                 // width and height
                 app.user_settings.saveSetting("window_width", this.Size.Width);
                 app.user_settings.saveSetting("window_height", this.Size.Height);
+            }
+
+        }
+
+        private void tmrUpgrade_Tick(object sender, EventArgs e)
+        {
+            // call to check if an upgrade is available.
+            if (app.upgrade_detector.upgradeAvailable)
+            {
+                // an upgrade is available! So now let's call the
+                // 
+            }
+            else
+            {
+                // an upgrade is not yet available, so call to check for one.
             }
 
         }

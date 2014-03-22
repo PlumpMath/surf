@@ -72,13 +72,12 @@ namespace Surf
                 });
             browserwindow.SelectedTabIndex = 0;
 
-            // temporary size
-            browserwindow.Size = new System.Drawing.Size(900, 700);
-
+            // get the size from our settings.
             browserwindow.Size = new System.Drawing.Size(app.user_settings.window_width, app.user_settings.window_height);
             browserwindow.Location = new System.Drawing.Point(user_settings.window_left, user_settings.window_top);
 
-
+            // Checks if we should maximize the window or not.
+            // How was it set in the settings?
             if (app.user_settings.window_maximized == true)
             {
                 browserwindow.WindowState = FormWindowState.Maximized;

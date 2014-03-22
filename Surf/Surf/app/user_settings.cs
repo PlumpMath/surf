@@ -186,16 +186,20 @@ namespace Surf.app
                         writer.WriteEndElement(); //browser
 
                         writer.WriteStartElement("window_placement");
+                        
+                        // centers vertically (height)
+                        writer.WriteElementString("window_top", Convert.ToString((Screen.PrimaryScreen.WorkingArea.Height / 2) - (700 / 2)));
+                        window_top = ((Screen.PrimaryScreen.WorkingArea.Height / 2) - (700 / 2));
 
-                        writer.WriteElementString("window_top", Convert.ToString((Screen.PrimaryScreen.WorkingArea.Height - 900) / 2));
-                        window_top = ((Screen.PrimaryScreen.WorkingArea.Height - 900) / 2);
-
+                        // not used
                         writer.WriteElementString("window_bottom", "0");
                         window_bottom = 0;
+                        
+                        // centers horizontally (width)
+                        writer.WriteElementString("window_left", Convert.ToString((Screen.PrimaryScreen.WorkingArea.Width / 2) - (900 / 2)));
+                        window_left = ((Screen.PrimaryScreen.WorkingArea.Width / 2) - (900 / 2));
 
-                        writer.WriteElementString("window_left", Convert.ToString((Screen.PrimaryScreen.WorkingArea.Height - 700) / 2));
-                        window_left = ((Screen.PrimaryScreen.WorkingArea.Height - 700) / 2);
-
+                        // not used
                         writer.WriteElementString("window_right", "0");
                         window_right = 0;
 

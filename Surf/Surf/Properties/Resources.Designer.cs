@@ -83,6 +83,26 @@ namespace Surf.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bookmarksStar {
+            get {
+                object obj = ResourceManager.GetObject("bookmarksStar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bookmarksStarLit {
+            get {
+                object obj = ResourceManager.GetObject("bookmarksStarLit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap border {
             get {
                 object obj = ResourceManager.GetObject("border", resourceCulture);
@@ -356,6 +376,96 @@ namespace Surf.Properties {
         internal static System.Drawing.Bitmap toolsActive {
             get {
                 object obj = ResourceManager.GetObject("toolsActive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge1 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge2 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge3 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge4 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge5 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge6 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge7 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateBadge8 {
+            get {
+                object obj = ResourceManager.GetObject("UpdateBadge8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateNotificationIcon {
+            get {
+                object obj = ResourceManager.GetObject("UpdateNotificationIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
