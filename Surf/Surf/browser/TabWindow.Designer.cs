@@ -58,7 +58,7 @@
             // forwardButton
             // 
             this.forwardButton.BackColor = System.Drawing.Color.Transparent;
-            this.forwardButton.Image = global::Surf.Properties.Resources.forwardActive;
+            this.forwardButton.Image = global::Surf.Properties.Resources.forwardNormal;
             this.forwardButton.Location = new System.Drawing.Point(37, 5);
             this.forwardButton.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
             this.forwardButton.Name = "forwardButton";
@@ -72,7 +72,7 @@
             // backButton
             // 
             this.backButton.BackColor = System.Drawing.Color.Transparent;
-            this.backButton.Image = global::Surf.Properties.Resources.backActive;
+            this.backButton.Image = global::Surf.Properties.Resources.backNormal;
             this.backButton.Location = new System.Drawing.Point(6, 5);
             this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 3, 3);
             this.backButton.Name = "backButton";

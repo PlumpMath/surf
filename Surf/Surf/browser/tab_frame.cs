@@ -60,6 +60,8 @@ namespace Surf.browser
             this.Icon = Properties.Resources.favicondefaultico;
             this.Icon = favIcon(webView.Address.ToString());
 
+            this.Text = webView.Title;
+
             if (webView.IsLoading)
             {
                 // we are loading. Show the spinner.

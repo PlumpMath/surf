@@ -466,6 +466,30 @@
   <ItemGroup>
     <None Include="Resources\bookmarksStarLit1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\httpsInvalid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\httpsValid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\httpsWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forwardDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forwardNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeNormal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

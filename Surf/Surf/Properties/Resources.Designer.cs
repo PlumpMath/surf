@@ -63,9 +63,9 @@ namespace Surf.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backActive {
+        internal static System.Drawing.Bitmap backDisabled {
             get {
-                object obj = ResourceManager.GetObject("backActive", resourceCulture);
+                object obj = ResourceManager.GetObject("backDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Surf.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bookmarksActive {
+        internal static System.Drawing.Bitmap backNormal {
             get {
-                object obj = ResourceManager.GetObject("bookmarksActive", resourceCulture);
+                object obj = ResourceManager.GetObject("backNormal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,19 +113,9 @@ namespace Surf.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonHoverBackground {
+        internal static System.Drawing.Bitmap buttonHoverBkg {
             get {
-                object obj = ResourceManager.GetObject("buttonHoverBackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap closeActive {
-            get {
-                object obj = ResourceManager.GetObject("closeActive", resourceCulture);
+                object obj = ResourceManager.GetObject("buttonHoverBkg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +213,59 @@ namespace Surf.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap forwardActive {
+        internal static System.Drawing.Bitmap forwardDisabled {
             get {
-                object obj = ResourceManager.GetObject("forwardActive", resourceCulture);
+                object obj = ResourceManager.GetObject("forwardDisabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forwardNormal {
+            get {
+                object obj = ResourceManager.GetObject("forwardNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap homeNormal {
+            get {
+                object obj = ResourceManager.GetObject("homeNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap httpsInvalid {
+            get {
+                object obj = ResourceManager.GetObject("httpsInvalid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap httpsValid {
+            get {
+                object obj = ResourceManager.GetObject("httpsValid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap httpsWarning {
+            get {
+                object obj = ResourceManager.GetObject("httpsWarning", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +413,9 @@ namespace Surf.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap toolsActive {
+        internal static System.Drawing.Bitmap toolsNormal {
             get {
-                object obj = ResourceManager.GetObject("toolsActive", resourceCulture);
+                object obj = ResourceManager.GetObject("toolsNormal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,14 +1,16 @@
 ﻿using Surf;
 using Surf.TabRenderer;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Surf.browser
 {
     public partial class browser_main : TitleBarTabs
     {
         // set up the upgrade timer.
-        Timer tmrUpgrade;
+        public static Timer tmrUpgrade;
 
         public browser_main()
         {
@@ -19,9 +21,10 @@ namespace Surf.browser
 
             // create the upgrade timer.
             tmrUpgrade = new System.Windows.Forms.Timer();
-            tmrUpgrade.Interval = 3000;
-
-            this.tmrUpgrade.Tick += new EventHandler(tmrUpgrade_Tick); 
+            tmrUpgrade.Interval = app.upgrade_detector.NotifyCycleTimeMs;
+            tmrUpgrade.Start();
+            
+            tmrUpgrade.Tick += new EventHandler(tmrUpgrade_Tick);
         }
 
         public override TitleBarTab CreateTab()
@@ -73,12 +76,73 @@ namespace Surf.browser
             // call to check if an upgrade is available.
             if (app.upgrade_detector.upgradeAvailable)
             {
-                // an upgrade is available! So now let's call the
-                // 
+                // check if we should increase the severity level.
+                app.upgrade_detector.increaseSeverityLevel();
+
+                // init list of open windows (each tab is considered an open window/form)
+                List<Form> openForms = new List<Form>();
+
+                    foreach(tab_frame tab in Application.OpenForms.OfType<tab_frame>() )
+                    {
+                        //*****************************
+                        //*****************************
+                        // for testing. remove later!
+                        tab.label1.Text = app.upgrade_detector.severityTime.TotalSeconds.ToString();
+
+                        // Make the upgrade badge visible.
+                        tab.upgradeBadge.Visible = true;
+
+                        // Check the severity level.
+                        switch (app.upgrade_detector.upgradeSeverityLevel)
+                        {
+                            case 1:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge1;
+                                break;
+
+                            case 2:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge2;
+                                break;
+
+                            case 3:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge3;
+                                break;
+
+                            case 4:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge4;
+                                break;
+
+                            case 5:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge5;
+                                break;
+
+                            case 6:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge6;
+                                break;
+
+                            case 7:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge7;
+                                break;
+
+                            case 8:
+                                // severity level is 1.
+                                tab.upgradeBadge.Image = Properties.Resources.UpdateBadge8;
+                                break;
+
+                        }
+                    }
+                    
             }
             else
             {
                 // an upgrade is not yet available, so call to check for one.
+                app.upgrade_detector.checkForUpgrade();
             }
 
         }

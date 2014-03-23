@@ -65,7 +65,7 @@ namespace Surf
 
         private void backButton_MouseEnter(object sender, EventArgs e)
         {
-            backButton.BackgroundImage = Resources.buttonHoverBackground;
+            backButton.BackgroundImage = Resources.buttonHoverBkg;
         }
 
         private void backButton_MouseLeave(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace Surf
 
         private void forwardButton_MouseEnter(object sender, EventArgs e)
         {
-            forwardButton.BackgroundImage = Resources.buttonHoverBackground;
+            forwardButton.BackgroundImage = Resources.buttonHoverBkg;
         }
 
         private void forwardButton_MouseLeave(object sender, EventArgs e)

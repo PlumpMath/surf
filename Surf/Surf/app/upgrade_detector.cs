@@ -3,42 +3,100 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Surf.app
 {
     class upgrade_detector
     {
         // initialize our settings.
-        public static Boolean upgradeAvailable = false;
+        public static bool upgradeAvailable = false;
+        public static int upgradeSeverityLevel = 0;
 
         // How long (in milliseconds) to wait (each cycle) before checking whether
-        // Surf's been upgraded behind our back.
-        const int CheckForUpgradeMs = 1 * 60 * 60 * 1000;  // 1 hour.
+        // Surf's been upgraded behind our back, or How long to wait (each cycle) 
+        // checking which severity level we should be at. Once we reach the highest 
+        // severity, the timer will stop.
+        public const int NotifyCycleTimeMs = 10 * 60 * 1000;  // 10 minutes.
 
-        // How long to wait (each cycle) before checking which severity level we should
-        // be at. Once we reach the highest severity, the timer will stop.
-        const int NotifyCycleTimeMs = 20 * 60 * 1000;  // 20 minutes.
-
+        public static DateTime startTime;
+        public static DateTime endTime;
+        public static TimeSpan severityTime;
+        
         public static void checkForUpgrade()
         {
             // here, we check for the uplock file, placed in the App Dir
-            // by Princeton Update when an upgrade is available and
-            // has been downloaded. If it's there, we call the
-            // upgradeCheck timer.
+            // by Princeton Update when an upgrade is available and has been downloaded.
 
-            if (File.Exists(app.product.dirSurfApp + "uplock"))
+            if (File.Exists(Path.Combine(app.product.dirSurfApp, "uplock")))
             {
+                startTime = DateTime.Now;
+                endTime = DateTime.Now.AddDays(7); // add 7 days, but we check how much time is left in seconds later.
+                severityTime = endTime.Subtract(DateTime.Now);
+
                 upgradeAvailable = true;
-                Surf.browser.tab_frame.bad
             }
 
         }
 
-        DateTime startTime = DateTime.Now;
-        DateTime endTime = DateTime.Now.AddSeconds( 75 );
+        public static void increaseSeverityLevel()
+        {
+            severityTime = endTime.Subtract(DateTime.Now);
 
-        TimeSpan span = endTime.Subtract ( startTime );
-        if (span.Seconds == 200)
+            // first hour of upgrade
+            if (severityTime.TotalSeconds <= 604800)
+            {
+                upgradeSeverityLevel = 1;
+            }
+
+            // 1 day into pending upgrade
+            if (severityTime.TotalSeconds <= 518400)
+            {
+                upgradeSeverityLevel = 2;
+            }
+
+            // 3 days into pending upgrade
+            if (severityTime.TotalSeconds <= 345600)
+            {
+                upgradeSeverityLevel = 3;
+            }
+
+            // 3 days, 12 hours
+            if (severityTime.TotalSeconds <= 302400)
+            {
+                upgradeSeverityLevel = 4;
+            }
+
+            // 4 days
+            if (severityTime.TotalSeconds <= 259200)
+            {
+                upgradeSeverityLevel = 5;
+            }
+
+            // 5 days
+            if (severityTime.TotalSeconds <= 172800)
+            {
+                upgradeSeverityLevel = 6;
+            }
+
+            // 6 days
+            if (severityTime.TotalSeconds <= 86400)
+            {
+                upgradeSeverityLevel = 7;
+            }
+
+            // day 7 and later.
+            if (severityTime.TotalSeconds <= 0)
+            {
+                upgradeSeverityLevel = 8;
+
+                // now we can stop the timer.
+                browser.browser_main.tmrUpgrade.Stop();
+            }
+
+        }
+
+        
 
     }
 

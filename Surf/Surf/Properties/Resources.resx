@@ -130,9 +130,6 @@
   <data name="UpdateBadge4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UpdateBadge4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bookmarksActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bookmarksActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="spinnerLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spinnerLoading.GIF;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,12 +144,6 @@
   </data>
   <data name="tabLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabAddHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabAddHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,9 +162,6 @@
   </data>
   <data name="tabClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="forwardActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forwardActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UpdateBadge8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UpdateBadge8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,7 +184,7 @@
   <data name="tabInactiveRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabInactiveRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toolsActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="toolsNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolsActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UpdateBadge1" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -217,7 +205,7 @@
   <data name="tabCloseHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabCloseHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonHoverBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="buttonHoverBkg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttonHoverBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UpdateBadge6" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -240,5 +228,29 @@
   </data>
   <data name="bookmarksStarLit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bookmarksStarLit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forwardDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forwardDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forwardNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forwardNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homeNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homeNormal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="httpsInvalid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\httpsInvalid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="httpsValid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\httpsValid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="httpsWarning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\httpsWarning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
